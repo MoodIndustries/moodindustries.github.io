@@ -21,13 +21,35 @@
         background: linear-gradient(to right bottom, #e62e76, #e67200) no-repeat center center fixed;
       }
 
-      .logo-white {
-        margin-top: 40px;
-        margin-bottom: 55px;
-        width: 250px;
+      .head_banner_desktop {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 24%;
       }
 
-      .logo-color {
+      .logo-white {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        width: 250px;
+        float: top;
+      }
+
+      .logo-mobile {
+        display: none;
+      }
+
+      .mail_button_desktop {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: -20px;
+        float: bottom;
+      }
+
+      .mail_button_mobile {
         display: none;
       }
 
@@ -54,28 +76,43 @@
         width: 250%;
         height: 250%;
         margin: 0;
-
         background-color: white;
+      }
+
+      .head_banner_mobile {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 27%;
       }
 
       .logo-white {
         display: none;
       }
 
-      .logo-color {
+      .logo-mobile {
         margin-top: 30px;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
         width: 80vw;
+      }
 
-        margin-left: auto;
-        margin-right: auto;
+      .mail_button_desktop {
+        display: none;
+      }
+
+      .mail_button_mobile {
+        width: 60vw;
+        margin: auto;
+        padding-top: 20px;
+        float: right;
       }
 
       .calendar {
         position: relative;
         width: 100%;
         height: 80vh;
-
+        padding-top: 12%;
         text-align: center;
         background-color: transparent;
 
@@ -105,8 +142,27 @@
 </head>
 
 <body>
-    <img src="logo-color.gif" class="logo-color" />
-    <img src="logo-white.gif" class="logo-white" />
+    <div class ="head_banner_desktop">
+      <img src="logo-white.gif" class="logo-white" />
+      <a href="mailto:moodindustriesevent@gmail.com?subject=Add Event!&body=I want to add a new event.%0D%0A%0D%0Ay name is [TYPE LOCATION HERE]. Please add to calendar!">
+        <input type="image"
+          src="add_event_button.png"
+          class="mail_button_desktop"
+          img="logo" />
+      </a>
+    </div>
+
+    <div class="head_banner_mobile">
+      <img src="logo-mobile.gif" class="logo-mobile" />
+      <a href="mailto:moodindustriesevent@gmail.com?subject=Add Event!&body=I want to add a new event.%0D%0A%0D%0Ay name is [TYPE LOCATION HERE]. Please add to calendar!">
+        <input type="image"
+          src="add_event_button.png"
+          class="mail_button_mobile"
+          img="logo" />
+      </a>
+    </div>
+
+
     <br/>
     <div class="calendar">
       <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ghd4v0jfbsr5hjoe3isfjtt62s%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FPhoenix" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
