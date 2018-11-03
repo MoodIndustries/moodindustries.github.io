@@ -16,15 +16,32 @@
     }
 
     .logo {
-      margin-top: 80px;
-      margin-bottom: 80px;
+      margin-top: 40px;
+      margin-bottom: 55px;
+    }
+
+    .calendar {
+      display: inline-block;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .content {
+      height: 90vh;
+      margin-top: auto;
+      margin-bottom: auto;
+      display: inline-block;
     }
   </style>
 </head>
 
 <body>
-  <img src="logo.png" width="200" class="logo" />
-  <br/>
-  <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ghd4v0jfbsr5hjoe3isfjtt62s%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FPhoenix" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+  <div class="content">
+    <img src="logo.png" width="200" class="logo" />
+    <br/>
+    <div class="calendar">
+      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ghd4v0jfbsr5hjoe3isfjtt62s%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FPhoenix" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
 </body>
 </html>
