@@ -1,2 +1,3 @@
 # moodindustries.github.io
-Calendar webapp
+
+Keep up to date with local music events!
