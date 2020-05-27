@@ -29,8 +29,10 @@
 
     @media (min-width: 601px) {
       body {
-        background: -webkit-linear-gradient(left top, #e62e76, #e67200) no-repeat center center fixed;
-        background: linear-gradient(to right bottom, #e62e76, #e67200) no-repeat center center fixed;
+        /* background: -webkit-linear-gradient(left top, #e62e76, #e67200) no-repeat center center fixed;
+        background: linear-gradient(to right bottom, #e62e76, #e67200) no-repeat center center fixed; */
+        background-image: url("bg-splash-page.jpg");
+        background-size: cover;
       }
 
       .head_banner_desktop {
@@ -42,8 +44,8 @@
       }
 
       .logo-white {
-        margin-top: 20px;
-        margin-bottom: 25px;
+        margin-top: 60px;
+        margin-bottom: 20px;
         width: 250px;
         float: top;
       }
@@ -52,25 +54,14 @@
         display: none;
       }
 
-      .mail_button_desktop {
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: -20px;
-        float: bottom;
-      }
-
-      .mail_button_mobile {
-        display: none;
-      }
-
       .calendar {
         display: inline-block;
-        padding: 20px;
+        padding: 10px;
         background-color: white;
-        width: 70vw;
+        width: 425px;
         height: 60vh;
+        border-radius: 8px;
+        box-shadow: 0px 9px 20px #00000066;
       }
 
       .calendar iframe {
@@ -88,7 +79,8 @@
         width: 250%;
         height: 250%;
         margin: 0;
-        background-color: #222222;
+        background-image: url("bg-splash-page.jpg");
+        background-size: fill;
       }
 
       .head_banner_mobile {
@@ -104,27 +96,15 @@
       }
 
       .logo-mobile {
-        margin-top: 30px;
+        margin-top: 60px;
         margin-bottom: 10px;
         width: 80vw;
-      }
-
-      .mail_button_desktop {
-        display: none;
-      }
-
-      .mail_button_mobile {
-        width: 60vw;
-        margin: auto;
-        padding-top: 20px;
-        float: right;
       }
 
       .calendar {
         position: relative;
         width: 100%;
-        height: 80vh;
-        padding-top: 12%;
+        height: 60vh;
         text-align: center;
         background-color: transparent;
 
@@ -158,28 +138,16 @@
     <div class ="head_banner_desktop">
       <img src="logo-white.gif" class="logo-white" />
       <!-- note: %0D%0A is standard line break for mailto statements -->
-      <a href="https://goo.gl/forms/PoVlPj9YbhVq8zTp1">
-        <input type="image"
-          src="add_event_button.png"
-          class="mail_button_desktop"
-          img="logo" />
-      </a>
     </div>
 
     <div class="head_banner_mobile">
-      <img src="logo-mobile.gif" class="logo-mobile" />
-      <a href="https://goo.gl/forms/PoVlPj9YbhVq8zTp1">
-        <input type="image"
-          src="add_event_button.png"
-          class="mail_button_mobile"
-          img="logo" />
-      </a>
+      <img src="logo-white.gif" class="logo-mobile" />
     </div>
 
 
     <br/>
     <div class="calendar">
-      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ghd4v0jfbsr5hjoe3isfjtt62s%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FPhoenix" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FDetroit&amp;src=ghd4v0jfbsr5hjoe3isfjtt62s%40group.calendar.google.com&amp;color=%23875509" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 </body>
 </html>
